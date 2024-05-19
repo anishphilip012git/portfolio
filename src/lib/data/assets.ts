@@ -9,13 +9,21 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
 	AWS: a('aws.svg'),
+	GCP:a('gcp.svg'),
+	FIREBASE:a('firebase.svg'),
+	JENKINS:a('jenkins.svg'),
+	ANSIBLE:a('ansible.svg'),
 	Bootstrap: a('bootstrap.svg'),
+	PHP:a('php.svg'),
 	C: a('c.svg'),
 	Cpp: a('cpp.svg'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
-	FastApi: a('fastapi'),
+	FastApi: a('fastapi.svg'),
+	SQLALCHEMY:a('SQLAlchemy.svg'),
 	Flask: a('flask.svg'),
+	SPRING:a('spring.svg'),
+	HIBERNATE:a('hibernate.svg'),
 	Go: a('go.svg'),
 	Kafka: a('kafka.svg'),
 	Neo4j: a('neo4j.svg'),
@@ -43,6 +51,7 @@ const Assets = {
 	JavaScript: a('js.png'),
 	Fastify: a('fastify.svg', 'fastify-dark.png'),
 	NestJs: a('nest.svg'),
+	ACTIVE_DIRECTORY:a('ad.jpg'),
 	Quasar: a('quasar.svg'),
 	SolidJs: a('solid.svg'),
 	Electron: a('electron.png'),
@@ -70,7 +79,15 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	SBU:a('sbu.svg'),
+	DTU:a('dtu.png'),
+	OXANE:a('oxane.jpeg'),
+	SAMSUNG:a('samsung.svg'),
+	CSI:a('csi.png'),
+	APPSOLUTE:a('appsolute.png'),
+	Git:a('git.svg'),
+	Terraform:a('Terraform.svg')
 };
 
 export default Assets;
