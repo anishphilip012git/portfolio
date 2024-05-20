@@ -291,6 +291,7 @@ export const items = [
 		name: 'SonarQube',
 		category: 'devtools'
 	  })
+	 
 
 ] as const;
 

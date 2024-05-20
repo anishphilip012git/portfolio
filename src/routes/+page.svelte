@@ -4,10 +4,12 @@
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
 	import { titleSuffix } from '@data/app';
 	import { links, description, lastName, name, title, skills } from '@data/home';
+	import { ProfilePics} from '@data/profile';
 	import { items as skillsItems } from '@data/skills';
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 	import { getPlatfromIcon } from '$lib/utils';
+	import CarrouselPp from '$lib/components/CarrouselPP/CarrouselPP.svelte';
 
 	const isEmail = (email: string): boolean => {
 		const reg =
@@ -15,6 +17,7 @@
 
 		return !isBlank(email) && reg.test(email);
 	};
+	let profilePics =ProfilePics;
 </script>
 
 <svelte:head>
@@ -24,6 +27,8 @@
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
 >
 	<div class="md:flex-1 gap-10px">
+		<!-- <img src={gh("pp1.png")} alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48 object-cover" />  -->
+		<CarrouselPp {profilePics} />
 		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
@@ -41,5 +46,6 @@
 			{/each}
 		</div>
 	</div>
+	<!-- <img class="w-120px h-120px aspect-circle" src={gh("pp2.png")} /> -->
 	<Carrousel items={skills ?? skillsItems} />
 </div>
