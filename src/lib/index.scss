@@ -53,6 +53,12 @@
 	--title-f: 'Inter';
 
 	overflow-y: scroll;
+	--chip-bg-light: #f1f1f1;
+	--chip-bg-dark: #333333;
+	--chip-color-light: #000000;
+	--chip-color-dark: #ffffff;
+	--chip-bg-hover-light: #e0e0e0; /* Hover color for light theme */
+  --chip-bg-hover-dark: #444444;  /* Hover color for dark theme */
 }
 
 body {
@@ -98,6 +104,9 @@ body {
 	--code-constant: var(--code-constant-dark);
 	--code-operator: var(--code-operator-dark);
 	--link: var(--link-light);
+	--chip-bg: var(--chip-bg-dark);
+	--chip-color: var(--chip-color-dark);
+	--chip-bg-hover: var(--chip-bg-hover-dark);
 }
 
 :root[data-theme='light'] {
@@ -133,6 +142,9 @@ body {
 	--code-constant: var(--code-constant-light);
 	--code-operator: var(--code-operator-light);
 	--link: var(--link-dark);
+	--chip-bg: var(--chip-bg-light);
+  	--chip-color: var(--chip-color-light);
+	  --chip-bg-hover: var(--chip-bg-hover-light);
 }
 
 .container {
@@ -365,3 +377,20 @@ body {
 		}
 	}
 }
+
+
+  .learn-chip {
+	display: inline-block;
+	padding: 0 25px;
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 25px;
+	background-color: var(--chip-bg);
+	color: var(--chip-color);
+	transition: background-color 0.3s, color 0.3s;
+  
+	&:hover {
+		background-color: var(--chip-bg-hover);
+	  }
+  }
