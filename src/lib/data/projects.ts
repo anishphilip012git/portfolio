@@ -1,22 +1,48 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
+import { getProjectDescription } from './projectDescription';
 
 export const items: Array<Project> = [
 	{
 		slug: 'stony-brook-university-workflow-digitization',
 		color: '#9370DB', // Purple
-		description: 'Digitized 80% of offline workflows within the Computer Science department, developing a web application for managing and tracking progress. Implemented online form filling and signing using Adobe PDF APIs, achieving a 60% reduction in processing time with a real-time progress tracker. Transformed a university website from non-mobile-friendly to mobile-friendly, resulting in a 30% increase in traffic and an enhanced user experience. Integrated with Google Calendar and Mail APIs for scheduling events and benefiting over 500 students and faculty members.',
+		description: getProjectDescription('csworkflow'),
 		shortDescription: 'Digitized workflows, enhanced user experiences, and integrated with third-party APIs at Stony Brook University.',
 		links: [],
 		logo: Assets.SBU,
 		name: 'Workflow Digitization',
 		period: {
 		  from: new Date('2024-01-01')	},
-		skills: getSkills('python', 'go', 'javascript', 'gcp', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
+		skills: getSkills('python', 'reactjs', 'javascript', 'gcp', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
 		type: 'Web Application'
 	  },
-	
+	  {
+		slug: 'stony-brook-university-ml-dsf-eval',
+		color: '#9370DB', // Purple
+		description: getProjectDescription('ml_dsf_eval'),
+		shortDescription: 'Elevating Local Economies: A Novel Approach to Quantifying Small Business Significance',
+		links: [],
+		logo: Assets.SBU,
+		name: 'Quantifying Significance of Small Businesses',
+		period: {
+		  from: new Date('2023-10-01'),to:new Date('2023-12-10')	},
+		skills: getSkills('python'),
+		type: 'Web Application'
+	  },
+	  {
+		slug: 'stony-brook-university-ml-rl-fts',
+		color: '#9370DB', // Purple
+		description: getProjectDescription('ml_rl_fts'),
+		shortDescription: 'Construction/implementation and evaluation of Financial Trading Systems (FTS) using a variety of Reinforcement Learning algorithms',
+		links: [],
+		logo: Assets.SBU,
+		name: 'Stock Trading with Reinforcement Learning Insights',
+		period: {
+		  from: new Date('2023-10-01'),to:new Date('2023-12-10')	},
+		skills: getSkills('python'),
+		type: 'Web Application'
+	  },
 	  {
 		slug: 'samsung-iam-system',
 		color: '#0071C5', // Blue

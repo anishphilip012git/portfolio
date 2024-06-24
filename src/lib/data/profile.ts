@@ -9,8 +9,8 @@ const a = (light: string, dark?: string): Asset =>
 
 
 export const ProfilePics=[
-	gh('pp1.png'),
-	gh('pp2.png'),
+	// gh('pp1.png'),
+	// gh('pp2.png'),
 	gh('pp3.png'),
 	// gh('pp4.png')
 ]

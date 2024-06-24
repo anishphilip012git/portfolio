@@ -2,6 +2,7 @@ import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
 import svelte from '../md/svelte.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
+import { getSkillDescription } from './skilldescription';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
 
@@ -36,11 +37,12 @@ const defineSkill = <S extends string>(
 	return out;
 };
 
+
 export const items = [
 	defineSkill({
 		slug: 'python',
 		color: '#3776AB',
-		description: 'Python is a high-level, interpreted, general-purpose programming language. It was created by Guido van Rossum and first released in 1991. Python is a versatile language that can be used for a wide range of applications, including web development, data analysis, machine learning, automation, and more.',
+		description:  getSkillDescription('python'),
 		logo: Assets.Python,
 		name: 'Python',
 		category: 'pro-lang'
@@ -48,7 +50,7 @@ export const items = [
 	  defineSkill({
 		slug: 'go',
 		color: '#00ADD8',
-		description: 'Go is a statically typed, compiled programming language designed at Google. It was created with a focus on simplicity, efficiency, and scalability. Go is widely used for building systems programming and network applications, as well as for cloud infrastructure and distributed systems.',
+		description: '<h1> Go is a statically typed, compiled programming language designed at Google.</h1> <br> It was created with a focus on simplicity, efficiency, and scalability. Go is widely used for building systems programming and network applications, as well as for cloud infrastructure and distributed systems.',
 		logo: Assets.Go,
 		name: 'Go',
 		category: 'pro-lang'
@@ -336,3 +338,4 @@ export const groupByCategory = (
 
 	return out;
 };
+

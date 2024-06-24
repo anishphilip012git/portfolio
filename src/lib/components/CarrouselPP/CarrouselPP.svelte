@@ -22,7 +22,7 @@
 	 */
 	let interval;
 	onMount(() => {
-	  interval = setInterval(nextPic, 10000); // Change image every 3 seconds
+	  interval = setInterval(nextPic, 5000); // Change image every 3 seconds
 	});
   
 	onDestroy(() => {

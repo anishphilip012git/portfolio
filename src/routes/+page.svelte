@@ -29,7 +29,7 @@
 	<div class="md:flex-1 gap-10px">
 		<!-- <img src={gh("pp1.png")} alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48 object-cover" />  -->
 		<CarrouselPp {profilePics} />
-		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
+		<MainTitle classes="md:text-left ">Hi, I am {name} {lastName},</MainTitle>
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>

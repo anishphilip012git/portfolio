@@ -53,6 +53,12 @@ export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDe
 	category?: SkillCategory;
 }
 
+export interface SkillDescription {
+	trivia: string;
+	experience: string[];
+	projects: { title: string; details: string; link?: string }[];
+  }
+
 export interface Project<S extends string = string> extends Item<S> {
 	links: Array<Link>;
 	color: Color;
@@ -63,6 +69,12 @@ export interface Project<S extends string = string> extends Item<S> {
 	type: string;
 	skills: Array<Skill<S>>;
 }
+
+export interface ProjectDescription {
+	title?: string; details: string; link?: string ;
+	highlights:string[];
+	learn:string[];
+  }
 
 export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
