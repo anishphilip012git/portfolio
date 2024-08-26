@@ -9,7 +9,10 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
 	AWS: a('aws.svg'),
+	AZURE:a('azure.svg'),
 	GCP:a('gcp.svg'),
+	MySQL:a('mysql.svg'),
+	SQLServer:a('sqlserver.svg'),
 	FIREBASE:a('firebase.svg'),
 	JENKINS:a('jenkins.svg'),
 	ANSIBLE:a('ansible.svg'),

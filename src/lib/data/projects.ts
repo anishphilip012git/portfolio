@@ -14,7 +14,7 @@ export const items: Array<Project> = [
 		name: 'Workflow Digitization',
 		period: {
 		  from: new Date('2024-01-01')	},
-		skills: getSkills('python', 'reactjs', 'javascript', 'gcp', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
+		skills: getSkills('python', 'reactjs', 'js', 'gcp', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
 		type: 'Web Application'
 	  },
 	  {
@@ -46,8 +46,8 @@ export const items: Array<Project> = [
 	  {
 		slug: 'samsung-iam-system',
 		color: '#0071C5', // Blue
-		description: 'Led the development of Samsung\'s in-house Identity and Access Management (IAM) system, managing cloud security for around 5000 servers and 700 databases globally. Revamped the desktop application to a secure web application for multiple platforms. Developed a comprehensive Security Hub for Samsung services, adopted on a global scale. Implemented a microservices-based architecture using Python FastAPI on serverless infrastructure and SQL Alchemy for dashboard development.',
-		shortDescription: 'Samsung\'s global Identity and Access Management (IAM) system and Security Hub.',
+		description: getProjectDescription('samsung_iam'),
+		shortDescription: 'Samsung\'s global Identity and Access Management (IAM) system',
 		links: [],
 		logo: Assets.SAMSUNG,
 		name: 'Samsung IAM System',
@@ -55,13 +55,13 @@ export const items: Array<Project> = [
 		  from: new Date('2019-01-01'),
 		  to: new Date('2023-08-31')
 		},
-		skills: getSkills('Golang','Ansible','Angular','python','AWS','Azure','GCP' , 'serverless', 'microservices', 'security', 'iam','zero-trust'),
+		skills: getSkills('golang','ansible','angular','python','mysql','sqlserver','postgresql','aws','azure','gcp', 'serverless', 'microservices', 'security', 'iam','zero-trust'),
 		type: 'Identity and Access Management System'
 	  },
 	  {
 		slug: 'samsung-soh-system',
 		color: '#0071C5', // Blue
-		description: 'Led the development of Samsung\'s in-house Identity and Access Management (IAM) system, managing cloud security for around 5000 servers and 700 databases globally. Revamped the desktop application to a secure web application for multiple platforms. Developed a comprehensive Security Hub for Samsung services, adopted on a global scale. Implemented a microservices-based architecture using Python FastAPI on serverless infrastructure and SQL Alchemy for dashboard development.',
+		description: getProjectDescription('samsung_soh'),
 		shortDescription: 'Samsung\'s cloud security operations hub.',
 		links: [],
 		logo: Assets.SAMSUNG,
@@ -70,13 +70,13 @@ export const items: Array<Project> = [
 		  from: new Date('2022-03-01'),
 		  to: new Date('2023-08-31')
 		},
-		skills: getSkills('python', 'fastapi', 'sqlalchemy','ReactJS','NextJS', 'Cloud','AWS','Azure','GCP','serverless', 'microservices', 'security','OpenVAS'),
+		skills: getSkills('python', 'fastapi', 'sqlalchemy','reactjs','nextjs', 'cloud','aws','azure','gcp','serverless', 'microservices', 'security','openvas'),
 		type: 'Samsung Security & Operations HUB'
 	  },
 	  {
 		slug: 'samsung-customer-support-system',
 		color: '#FF0000', // Red
-		description: 'Developed a real-time email tracking and productivity management system for Samsung customer care. Automated downloading of emails from Samsung Support IDs and attendance-based allocation to support center employees. Implemented notification and issue tracking for customer tickets, reducing turnaround time to less than a day and increasing employee efficiency by 80%.',
+		description: getProjectDescription("samsung_erms"),
 		shortDescription: 'Email tracking and productivity management system for Samsung customer care.',
 		links: [],
 		logo: Assets.SAMSUNG,
@@ -85,7 +85,7 @@ export const items: Array<Project> = [
 		  from: new Date('2017-07-01'),
 		  to: new Date('2019-12-31')
 		},
-		skills: getSkills('JAVA','Spring','Vue.js','MySQL','Golang','email-tracking', 'productivity-management', 'automation', 'notification', 'issue-tracking'),
+		skills: getSkills('java','spring','vuejs','mysql','js','golang','email-tracking', 'productivity-management', 'automation', 'notification', 'issue-tracking'),
 		type: 'Customer Support System'
 	  },
 	  {
@@ -101,7 +101,7 @@ export const items: Array<Project> = [
 		period: {
 		  from: new Date('2016-06-01'),  to: new Date('2016-07-31')
 		},
-		skills: getSkills('java', 'spring', 'hibernate', 'angularjs', 'xml', 'json','Tools'),
+		skills: getSkills('java', 'spring', 'hibernate', 'angularjs', 'xml', 'json'),
 		type: 'Web Application and Automation Tools'
 	  },
 	  {
