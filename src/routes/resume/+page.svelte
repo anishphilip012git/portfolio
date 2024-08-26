@@ -1,5 +1,5 @@
 <script>
-	import { resume_se,resume_ds, title } from '@data/resume';
+	import { resume_se,resume_ds, title, resume_devops } from '@data/resume';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
@@ -15,6 +15,11 @@
 		{#if resume_ds}
 			<a href={resume_ds} download>
 				<Chip size={'1.25em'}>Download DS Role Resume</Chip>
+			</a>
+		{/if}
+		{#if resume_devops}
+			<a href={resume_devops} download>
+				<Chip size={'1.25em'}>Download Devops Role Resume</Chip>
 			</a>
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>

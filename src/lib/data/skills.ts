@@ -79,7 +79,32 @@ export const items = [
 		name: 'PHP',
 		category: 'pro-lang'
 	  }),
-	
+	  defineSkill({
+		slug: 'mysql',
+		color: '#4479A1',
+		description: 'MySQL is an open-source relational database management system (RDBMS) known for its reliability, ease of use, and performance. Developed by MySQL AB and now owned by Oracle Corporation, it is widely used in web applications and data-driven environments. MySQL supports various storage engines and provides strong data security features.',
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'db'
+	  }),
+	  
+	  defineSkill({
+		slug: 'postgresql',
+		color: '#336791',
+		description: 'PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robust feature set and compliance with SQL standards. It is designed to handle complex queries and large volumes of data, providing extensibility and support for various data types. PostgreSQL is often used for enterprise applications and data warehousing.',
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL',
+		category: 'db'
+	  }),
+	  
+	  defineSkill({
+		slug: 'sqlserver',
+		color: '#CC2927',
+		description: 'SQL Server is a relational database management system (RDBMS) developed by Microsoft. It provides a comprehensive platform for managing and analyzing data with advanced features such as data warehousing, business intelligence, and integration services. SQL Server is known for its high performance, scalability, and strong security features.',
+		logo: Assets.SQLServer,
+		name: 'SQL Server',
+		category: 'db'
+	  }),
 	defineSkill({
 		slug: 'ts',
 		color: 'blue',
@@ -219,6 +244,14 @@ export const items = [
 		description: 'AWS (Amazon Web Services) is a comprehensive cloud computing platform provided by Amazon, offering a wide range of services including computing power, database storage, content delivery, and other functionality to help businesses scale and grow.',
 		logo: Assets.AWS,
 		name: 'AWS',
+		category: 'cloud'
+	  }),
+	  defineSkill({
+		slug: 'azure',
+		color: '#FF9900',
+		description: 'Azure is a comprehensive cloud computing platform provided by Microsoft, offering a wide range of services including computing power, database storage, content delivery, and other functionality to help businesses scale and grow.',
+		logo: Assets.AZURE,
+		name: 'Azure',
 		category: 'cloud'
 	  }),
 	  defineSkill({

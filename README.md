@@ -1,4 +1,21 @@
-# Slick Portfolio With Svelte.
+# Portfolio Overview
+
+Welcome to my portfolio—a comprehensive showcase of my skills, experience, and professional journey, meticulously crafted using Svelte and TypeScript. Below, you'll find insights into the key sections of my portfolio, each designed to provide a detailed overview of my work.
+
+### Key Features
+- Dark and Light Modes: Enjoy a seamless viewing experience with both dark and light modes, tailored to your preference and environment.
+- CI/CD Integration: The portfolio is deployed using GitHub Actions, demonstrating my expertise in continuous integration and deployment. This reflects my proficiency in automating workflows and ensuring efficient, reliable deployments.
+### Sections
+- Projects: A collection of my most notable work, showcasing my ability to architect, develop, and deploy complex systems. While much of my work is restrictive, I’ve shared as much as possible here.
+- Education: A summary of my academic background, highlighting the knowledge and skills that have shaped my professional path.
+- Experience: An overview of my career, detailing the roles and responsibilities that have contributed to my growth as a developer.
+- Resume: A downloadable version of my resume, providing a concise view of my skills, experiences, and achievements.
+### Learning Journey
+This portfolio is more than just a showcase; it represents my learning journey. By building it from the ground up, I gained hands-on experience in Svelte, honed my TypeScript skills, and enhanced my understanding of CI/CD processes through GitHub Actions.
+
+
+#### Passing it on:
+##### Slick Portfolio With Svelte.
 
 Vercel-like style portfolio template for developers.
 
