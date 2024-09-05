@@ -5,18 +5,46 @@ import { getProjectDescription } from './projectDescription';
 
 export const items: Array<Project> = [
 	{
+		slug: 'stony-brook-university-seclab-websheets',
+		color: '#9370DB', // Purple
+		description: getProjectDescription('websheets'),
+		shortDescription: 'A no-code framework for manipulating tabular data, featuring a custom query language based on Forensic Query Language by Prof. R. Sekar. It offers a seamless and secure way to manage data, utilizing a novel architecture inspired by the granularity and flexibility of Linux file systems to ensure data segregation and privacy.',
+		links: [],
+		logo: Assets.SBU,
+		name: 'Websheets - SECLAB',
+		period: {
+		  from: new Date('2024-01-01')	},
+		skills: getSkills('c++', 'reactjs', 'js', 'ant design', 'microservices', 'docker', 'vagrant','vm','privacy-policies'),
+		type: 'Web Application'
+	  },
+	  {
 		slug: 'stony-brook-university-workflow-digitization',
 		color: '#9370DB', // Purple
 		description: getProjectDescription('csworkflow'),
 		shortDescription: 'Digitized workflows, enhanced user experiences, and integrated with third-party APIs at Stony Brook University.',
 		links: [],
 		logo: Assets.SBU,
-		name: 'Workflow Digitization',
+		name: 'CS Workflow Digitization - COMPAS lab',
 		period: {
 		  from: new Date('2024-01-01')	},
-		skills: getSkills('python', 'reactjs', 'js', 'gcp', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
+		skills: getSkills('python', 'reactjs', 'js', 'gcp','nodejs','firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
 		type: 'Web Application'
 	  },
+	  {
+		"slug": "stony-brook-university-ml-ds-urban-transportation",
+		"color": "#4682B4", // Steel Blue
+		"description": getProjectDescription("ds_prob_stats"),
+		"shortDescription": "Comprehensive Data Analysis and Predictive Modeling for Urban Transportation",
+		"links": [],
+		"logo": Assets.SBU, // Placeholder for project-specific logo
+		"name": "Urban Transportation Data Analysis",
+		"period": {
+			"from": new Date("2024-02-01"),
+			"to": new Date("2024-05-31")
+		},
+		"skills": getSkills('python'),
+		"type": "Data Science Project"
+	},	
 	  {
 		slug: 'stony-brook-university-ml-dsf-eval',
 		color: '#9370DB', // Purple
@@ -55,7 +83,7 @@ export const items: Array<Project> = [
 		  from: new Date('2019-01-01'),
 		  to: new Date('2023-08-31')
 		},
-		skills: getSkills('golang','ansible','angular','python','mysql','sqlserver','postgresql','aws','azure','gcp', 'serverless', 'microservices', 'security', 'iam','zero-trust'),
+		skills: getSkills('go','ansible','angular','python','mysql','sqlserver','postgresql','aws','azure','gcp', 'serverless', 'microservices', 'security', 'iam','zero-trust'),
 		type: 'Identity and Access Management System'
 	  },
 	  {
@@ -85,7 +113,7 @@ export const items: Array<Project> = [
 		  from: new Date('2017-07-01'),
 		  to: new Date('2019-12-31')
 		},
-		skills: getSkills('java','spring','vuejs','mysql','js','golang','email-tracking', 'productivity-management', 'automation', 'notification', 'issue-tracking'),
+		skills: getSkills('java','spring','vuejs','mysql','js','go','email-tracking', 'productivity-management', 'automation', 'notification', 'issue-tracking'),
 		type: 'Customer Support System'
 	  },
 	  {
