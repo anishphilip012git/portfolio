@@ -20,7 +20,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	
 ];
 
-export const skills = getSkills('js', 'ts',  'java','go','angular','ansible','aws','gcp','reactjs', 'sass', 'svelte', 'css','html',);
+export const skills = getSkills('python','js', 'ts',  'java','go','angular','ansible','aws','gcp','reactjs', 'svelte');
 // {
 	// 	platform: Platform.Twitter,
 	// 	link: 'https://x.com/AnishPhilip16'
