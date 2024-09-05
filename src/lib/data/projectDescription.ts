@@ -58,7 +58,7 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
     },
     websheets:{
         title:"Websheets : Research Assistant",
-        details:"Associated with Secure Systems Lab Stony Brook University (May 2024 - Present). This project embarks on a new approach to managing data and privacy policies associated wiht it. It envisons a new framework which doesn't requires creating lengthy backend and frontend codes to provide visual interfaces for tabular data. Users can manage",
+        details:"Associated with Secure Systems Lab Stony Brook University (May 2024 - Present). This project embarks on a new approach to managing data and privacy policies associated with it. It envisons a new framework which doesn't requires creating lengthy backend and frontend codes to provide visual interfaces for tabular data. Users can manage",
         highlights:["Developed an NSF-funded full-stack framework based in Linux ,C++, React, Redux & TypeScript for creating webapps with privacy policies.","Spearheaded the design and implementation of a comprehensive no-code UX framework for enforcement of data privacy policies.","Built a real-time cell-level spreadsheet module for tabular data, similar to Google Sheets, with integrated CI/CD pipelines using Github actions."],
         link:"http://seclab.cs.sunysb.edu/seclab/pubs/nspw15.pdf",
         learn:["privacy-policies",'React', 'Ant design','webpack', 'c/c++','make','bash','Linux file system','FQL (a language created By Prof. Sekar)']
