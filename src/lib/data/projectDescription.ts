@@ -61,7 +61,7 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
         details:"Associated with Secure Systems Lab Stony Brook University (May 2024 - Present). This project embarks on a new approach to managing data and privacy policies associated wiht it. It envisons a new framework which doesn't requires creating lengthy backend and frontend codes to provide visual interfaces for tabular data. Users can manage",
         highlights:["Developed an NSF-funded full-stack framework based in Linux ,C++, React, Redux & TypeScript for creating webapps with privacy policies.","Spearheaded the design and implementation of a comprehensive no-code UX framework for enforcement of data privacy policies.","Built a real-time cell-level spreadsheet module for tabular data, similar to Google Sheets, with integrated CI/CD pipelines using Github actions."],
         link:"http://seclab.cs.sunysb.edu/seclab/pubs/nspw15.pdf",
-        learn:["privacy-policies",'React', 'Ant design', 'c/c++','Linux file system','FQL (a language created By Prof. Sekar)']
+        learn:["privacy-policies",'React', 'Ant design','webpack', 'c/c++','make','bash','Linux file system','FQL (a language created By Prof. Sekar)']
         
     },
     hotel_rozgar:	{
@@ -172,7 +172,22 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
     },
       
     ds_prob_stats:{
-
-    }
+        "title": "Complex Data Analysis and Predictive Modeling for Urban Transportation",
+        "details": "Architected and implemented an end-to-end data analysis framework on a large-scale urban taxi dataset. Focused on advanced statistical modeling, outlier detection, and predictive analytics to derive actionable insights and improve decision-making processes.",
+        "highlights": [
+          "Engineered a data cleaning pipeline to ensure data integrity by removing anomalies and imputing missing values.",
+          "Applied Tukey's rule and handled outliers at scale, preserving model accuracy for passenger count, trip duration, and fare amount.",
+          "Performed rigorous hypothesis testing with Wald’s test, Z-test, and t-test under complex assumptions to evaluate trends in trip data.",
+          "Implemented distributional analysis using K-S tests and permutation tests to infer underlying data distributions.",
+          "Designed advanced univariate and multivariate linear regression models, achieving high predictive accuracy using SSE and MAPE metrics.",
+          "Developed AR and EWMA time series models to forecast trip amounts, revealing critical urban mobility patterns.",
+          "Executed Bayesian inference with sequential updating to refine trip distance distributions, integrating prior knowledge with observed data.",
+          "Conducted chi-square tests to assess relationships between tip amount and passenger count, uncovering key customer behavior patterns.",
+          "Well versed in statistical modeling, hypothesis testing, and Bayesian analysis, demonstrating strong data science and predictive analytics capabilities."
+        ],
+        "link": "",
+        "learn": ["Data cleaning", "Outlier detection", "Hypothesis testing", "Predictive modeling", "Time series analysis", "Bayesian inference", "Chi-square tests", "Jupyter"]
+      }
+      
 
 }
