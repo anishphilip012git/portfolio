@@ -6,6 +6,7 @@
 
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
+	import  Icon  from '@iconify/svelte'; // Import Iconify component
 
 	$: currentRoute = $page.url.pathname;
 
@@ -39,7 +40,11 @@
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
 			{#each items as item (item.title)}
 				<a href={`${base}${item.to}`} class="nav-menu-item !text-[var(--secondary-text)]">
-					<UIcon icon={item.icon} classes="text-1.3em" />
+					{#if item.iconType === 'twemoji'}
+					<Icon icon="twemoji:writing-hand-medium-skin-tone" class="text-1.3em" /> 
+					{:else}
+						<UIcon icon={item.icon} classes="text-1.3em" />
+					{/if}
 					<span class="nav-menu-item-label">{item.title}</span>
 				</a>
 			{/each}
@@ -84,7 +89,11 @@
 					class="nav-menu-item !text-[var(--secondary-text)] gap-5"
 					on:click={() => toggleExpanded(false)}
 				>
+				{#if item.iconType === 'twemoji'}
+				<Icon icon="twemoji:writing-hand-medium-skin-tone" class="text-1.3em" /> 
+				{:else}
 					<UIcon icon={item.icon} classes="text-1.3em" />
+				{/if}
 					<span class="">{item.title}</span>
 				</a>
 			{/each}

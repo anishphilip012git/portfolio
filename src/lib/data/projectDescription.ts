@@ -42,7 +42,7 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
         highlights: ["Evaluated price prediction models for a stock pool of single and multipel stocks", "Assessed efficacy of LSTM models in various scenarios for profit analysis"
         ],
         link: 'https://www.linkedin.com/in/anishphilip12/details/projects/1709443399002/single-media-viewer/?profileId=ACoAABGGalcBOgCoZ-ElFybA18MJOi1Zq0x7ytE',
-        learn: ['machine-learning applications', 'Reinforcement learning', 'DEep Learning', 'Stock Market', 'Neural Networks', 'LSTM', 'Temporal Q-Learning', 'K-Line Clustering']
+        learn: ['machine-learning applications', 'Reinforcement learning', 'Deep Learning', 'Stock Market', 'Neural Networks', 'LSTM', 'Temporal Q-Learning', 'K-Line Clustering']
     },
     csworkflow: {
         title: "CS Workflow Digitization",

@@ -46,6 +46,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@iconify-json/twemoji": "^1.2.0",
+		"@iconify/svelte": "^4.0.2",
 		"@types/pdfjs-dist": "^2.10.378",
 		"dayjs": "^1.11.10",
 		"pdfjs-dist": "^4.2.67"
