@@ -54,17 +54,17 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
             "Integration with Google (Calendar and Mail) API: Seamlessly integrated with Google Calendar for scheduling events. Benefited over 500 students and faculty members for presentations.",
         ],
         link: 'http://workflow.cs.stonybrook.edu/',
-        learn: ['GCP','NodeJS', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis']
+        learn: ['GCP', 'NodeJS', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis']
     },
-    websheets:{
-        title:"Websheets : Research Assistant",
-        details:"Associated with Secure Systems Lab Stony Brook University (May 2024 - Present). This project embarks on a new approach to managing data and privacy policies associated with it. It envisons a new framework which doesn't requires creating lengthy backend and frontend codes to provide visual interfaces for tabular data. Users can manage",
-        highlights:["Developed an NSF-funded full-stack framework based in Linux ,C++, React, Redux & TypeScript for creating webapps with privacy policies.","Spearheaded the design and implementation of a comprehensive no-code UX framework for enforcement of data privacy policies.","Built a real-time cell-level spreadsheet module for tabular data, similar to Google Sheets, with integrated CI/CD pipelines using Github actions."],
-        link:"http://seclab.cs.sunysb.edu/seclab/pubs/nspw15.pdf",
-        learn:["privacy-policies",'React', 'Ant design','webpack', 'c/c++','make','bash','Linux file system','FQL (a language created By Prof. Sekar)']
-        
+    websheets: {
+        title: "Websheets : Research Assistant",
+        details: "Associated with Secure Systems Lab Stony Brook University (May 2024 - Present). This project embarks on a new approach to managing data and privacy policies associated with it. It envisons a new framework which doesn't requires creating lengthy backend and frontend codes to provide visual interfaces for tabular data. Users can manage",
+        highlights: ["Developed an NSF-funded full-stack framework based in Linux ,C++, React, Redux & TypeScript for creating webapps with privacy policies.", "Spearheaded the design and implementation of a comprehensive no-code UX framework for enforcement of data privacy policies.", "Built a real-time cell-level spreadsheet module for tabular data, similar to Google Sheets, with integrated CI/CD pipelines using Github actions."],
+        link: "http://seclab.cs.sunysb.edu/seclab/pubs/nspw15.pdf",
+        learn: ["privacy-policies", 'React', 'Ant design', 'webpack', 'c/c++', 'make', 'bash', 'Linux file system', 'FQL (a language created By Prof. Sekar)']
+
     },
-    hotel_rozgar:	{
+    hotel_rozgar: {
         "title": "Hotel Rozgar",
         "details": "Hotel Rozgar is a microservices-based job search platform tailored for the informal job sector, with a focus on the hotel industry. The platform offers features like job postings, job search, applications, and a community section for industry engagement. The system is designed for scalability and high availability, ensuring a seamless user experience.",
         "highlights": [
@@ -85,7 +85,7 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
             "CI/CD pipeline automation"
         ]
     },
-    samsung_iam:{
+    samsung_iam: {
         "title": "Samsung Cloud Security Identity and Access Management",
         "details": "Over four years, developed and led the implementation of a patent-backed cloud security platform for Samsung, providing secure, single-click access to over 1500 cloud resources. The project involved transitioning to a serverless architecture, automating infrastructure provisioning, and ensuring near-perfect system availability across AWS, Azure, and GCP. The platform supported 50+ Samsung Smart TV services globally, with a focus on enhancing security, reducing manual efforts, and optimizing cloud server costs.",
         //Led the development of Samsung\'s in-house Identity and Access Management (IAM) system, managing cloud security for around 5000 servers and 700 databases globally. Revamped the desktop application to a secure web application for multiple platforms. Developed a comprehensive Security Hub for Samsung services, adopted on a global scale. Implemented a microservices-based architecture using Python FastAPI on serverless infrastructure and SQL Alchemy for dashboard development.
@@ -108,12 +108,12 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
             "Serverless architecture",
             "AWS automation with Ansible",
             "Multi-cloud management",
-            "Identity and Access Management (IAM)","Microsoft Active Directory administration including backup",
+            "Identity and Access Management (IAM)", "Microsoft Active Directory administration including backup",
             "Infrastructure as Code with Terraform",
             "Microservices architecture"
         ]
-    }, 
-    samsung_soh:{
+    },
+    samsung_soh: {
         // 'Led the development of Samsung\'s in-house Identity and Access Management (IAM) system, managing cloud security for around 5000 servers and 700 databases globally. Revamped the desktop application to a secure web application for multiple platforms. Developed a comprehensive Security Hub for Samsung services, adopted on a global scale. Implemented a microservices-based architecture using Python FastAPI on serverless infrastructure and SQL Alchemy for dashboard development.',
         "title": "Global-Scale Security Hub Development",
         "details": "Led the development of a zero-trust Security Hub with 99.9% availability, supporting multi-cloud environments (AWS, Azure, GCP) and enhancing infrastructure resilience and scalability through serverless architecture and advanced threat mitigation.",
@@ -126,12 +126,12 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
         ],
         "link": "",
         "learn": [
-            "NextJS","SQLAlchemy","FastApi","OpenVAS",
+            "NextJS", "SQLAlchemy", "FastApi", "OpenVAS",
             "Serverless Architecture",
             "Multi-cloud Management"
         ]
     },
-    samsung_erms:{
+    samsung_erms: {
         //'Developed a real-time email tracking and productivity management system for Samsung customer care. Automated downloading of emails from Samsung Support IDs and attendance-based allocation to support center employees. Implemented notification and issue tracking for customer tickets, reducing turnaround time to less than a day and increasing employee efficiency by 80%.',
         "title": "Real-Time Email Tracking System for Samsung Customer Care",
         "details": "Designed and developed a real-time email tracking system for Samsung Customer Care to enhance operational efficiency and improve response times. The system automated the downloading of over 5,000 emails daily, managed ticket allocation for over 100 users, and tracked employee efficiency. Utilized a tech stack including Java, Spring, MyBatis, Hibernate, MySQL, Vue.js, and JavaScript, and implemented CI/CD pipelines for seamless deployment and updates.",
@@ -149,8 +149,8 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
             "Advanced email handling and automation techniques",
             "Agile project management and cross-team coordination"
         ]
-    },  
-    portfolio:{
+    },
+    portfolio: {
         "title": "Portfolio Overview",
         "details": "This portfolio serves as a comprehensive showcase of my technical skills, experience, and professional journey, meticulously built using Svelte and TypeScript. It provides a detailed overview of my work and highlights my expertise in modern web technologies and continuous integration/deployment (CI/CD) processes.",
         "highlights": [
@@ -170,24 +170,24 @@ const projectDescriptions: { [key: string]: ProjectDescription } = {
             "Responsive design and user experience"
         ]
     },
-      
-    ds_prob_stats:{
+
+    ds_prob_stats: {
         "title": "Complex Data Analysis and Predictive Modeling for Urban Transportation",
         "details": "Architected and implemented an end-to-end data analysis framework on a large-scale urban taxi dataset. Focused on advanced statistical modeling, outlier detection, and predictive analytics to derive actionable insights and improve decision-making processes.",
         "highlights": [
-          "Engineered a data cleaning pipeline to ensure data integrity by removing anomalies and imputing missing values.",
-          "Applied Tukey's rule and handled outliers at scale, preserving model accuracy for passenger count, trip duration, and fare amount.",
-          "Performed rigorous hypothesis testing with Wald’s test, Z-test, and t-test under complex assumptions to evaluate trends in trip data.",
-          "Implemented distributional analysis using K-S tests and permutation tests to infer underlying data distributions.",
-          "Designed advanced univariate and multivariate linear regression models, achieving high predictive accuracy using SSE and MAPE metrics.",
-          "Developed AR and EWMA time series models to forecast trip amounts, revealing critical urban mobility patterns.",
-          "Executed Bayesian inference with sequential updating to refine trip distance distributions, integrating prior knowledge with observed data.",
-          "Conducted chi-square tests to assess relationships between tip amount and passenger count, uncovering key customer behavior patterns.",
-          "Well versed in statistical modeling, hypothesis testing, and Bayesian analysis, demonstrating strong data science and predictive analytics capabilities."
+            "Engineered a data cleaning pipeline to ensure data integrity by removing anomalies and imputing missing values.",
+            "Applied Tukey's rule and handled outliers at scale, preserving model accuracy for passenger count, trip duration, and fare amount.",
+            "Performed rigorous hypothesis testing with Wald’s test, Z-test, and t-test under complex assumptions to evaluate trends in trip data.",
+            "Implemented distributional analysis using K-S tests and permutation tests to infer underlying data distributions.",
+            "Designed advanced univariate and multivariate linear regression models, achieving high predictive accuracy using SSE and MAPE metrics.",
+            "Developed AR and EWMA time series models to forecast trip amounts, revealing critical urban mobility patterns.",
+            "Executed Bayesian inference with sequential updating to refine trip distance distributions, integrating prior knowledge with observed data.",
+            "Conducted chi-square tests to assess relationships between tip amount and passenger count, uncovering key customer behavior patterns.",
+            "Well versed in statistical modeling, hypothesis testing, and Bayesian analysis, demonstrating strong data science and predictive analytics capabilities."
         ],
         "link": "",
         "learn": ["Data cleaning", "Outlier detection", "Hypothesis testing", "Predictive modeling", "Time series analysis", "Bayesian inference", "Chi-square tests", "Jupyter"]
-      }
-      
+    }
+
 
 }

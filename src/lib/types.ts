@@ -8,7 +8,7 @@ export enum Platform {
 	Email = 'email',
 	Facebook = 'facebook',
 	Youtube = 'youtube',
-	BIO='bio'
+	BIO = 'bio'
 }
 
 export type Icon = `i-${string}-${string}`;
@@ -57,7 +57,7 @@ export interface SkillDescription {
 	trivia: string;
 	experience: string[];
 	projects: { title: string; details: string; link?: string }[];
-  }
+}
 
 export interface Project<S extends string = string> extends Item<S> {
 	links: Array<Link>;
@@ -71,10 +71,43 @@ export interface Project<S extends string = string> extends Item<S> {
 }
 
 export interface ProjectDescription {
-	title?: string; details: string; link?: string ;
-	highlights:string[];
-	learn:string[];
-  }
+	title?: string; details: string; link?: string;
+	highlights: string[];
+	learn: string[];
+}
+// // Represents a single project description
+// export interface ProjectDescriptionV2 {
+// 	title: string;
+// 	demo?: string;  // Optional project demo URL
+// 	link?: string;  // Optional project URL
+// 	problem?: string;  // Problem statement or project goal
+// 	role?: string;  // Role played in the project
+// 	challenges?: string[];  // Key difficulties faced during the project
+// 	solution?: string;  // Key solutions or features implemented
+// 	details?: string;
+// 	highlights?: string[];  // Key achievements or notable features
+// 	impact?: string;  // Real-world significance of the project
+// 	technologies?: string[];  // Tech stack used
+// 	learn?: string[];  // Key learning areas from the project
+// }
+
+// // Represents a project entry
+// interface Project {
+// 	slug: string;
+// 	color: string;
+// 	description: string;
+// 	shortDescription: string;
+// 	links: string[];
+// 	logo: string;
+// 	name: string;
+// 	period: {
+// 		from: Date;
+// 		to: Date;
+// 	};
+// 	skills: string[];
+// 	type: string;
+// }
+
 
 export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
