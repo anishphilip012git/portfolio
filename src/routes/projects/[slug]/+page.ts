@@ -16,15 +16,18 @@ export async function load({ params, fetch }) {
 
 	try {
 		const res = await fetch(`${base}/descriptions/${slug}.md`);
-		console.log(`[project:${slug}]`, res.ok ? 'Loaded markdown' : 'Markdown not found, falling back');
 
-		if (!res.ok) throw new Error(`Failed to fetch markdown for project: ${slug}`);
+		if (!res.ok) {
+			// Suppress 404 but log it
+			console.warn(`[project:${slug}] Markdown not found (status ${res.status}), using fallback.`);
+			throw new Error(`Markdown fetch failed for ${slug}`);
+		}
+
 		const markdown = await res.text();
 		description = marked.parse(markdown);
 	} catch (err) {
-		console.log(`[project:${slug}]`, 'Using fallback from getProjectDescription()');
+		console.log(`[project:${slug}] Using fallback description`);
 		description = getProjectDescription(slug) || project.description || 'No description available.';
-
 	}
 
 	return {
