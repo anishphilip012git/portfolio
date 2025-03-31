@@ -57,8 +57,10 @@
 	--chip-bg-dark: #333333;
 	--chip-color-light: #000000;
 	--chip-color-dark: #ffffff;
-	--chip-bg-hover-light: #e0e0e0; /* Hover color for light theme */
-  --chip-bg-hover-dark: #444444;  /* Hover color for dark theme */
+	--chip-bg-hover-light: #e0e0e0;
+	/* Hover color for light theme */
+	--chip-bg-hover-dark: #444444;
+	/* Hover color for dark theme */
 }
 
 body {
@@ -143,8 +145,8 @@ body {
 	--code-operator: var(--code-operator-light);
 	--link: var(--link-dark);
 	--chip-bg: var(--chip-bg-light);
-  	--chip-color: var(--chip-color-light);
-	  --chip-bg-hover: var(--chip-bg-hover-light);
+	--chip-color: var(--chip-color-light);
+	--chip-bg-hover: var(--chip-bg-hover-light);
 }
 
 .container {
@@ -234,6 +236,7 @@ body {
 		&.token.operator {
 			color: var(--code-operator);
 		}
+
 		&.token.interpolation {
 			color: var(--code-interpolation);
 		}
@@ -300,7 +303,7 @@ body {
 		border-radius: 0.25em;
 	}
 
-	& :not(pre) > code[class*='language-'],
+	& :not(pre)>code[class*='language-'],
 	pre[class*='language-'] {
 		background-color: var(--main-hover);
 		border: 1px solid var(--border);
@@ -353,6 +356,7 @@ body {
 	}
 
 	&:hover {
+
 		&::before,
 		&::after {
 			background-color: auto;
@@ -379,7 +383,7 @@ body {
 }
 
 
-  .learn-chip {
+.learn-chip {
 	display: inline-block;
 	padding: 0 25px;
 	height: 20px;
@@ -389,8 +393,78 @@ body {
 	background-color: var(--chip-bg);
 	color: var(--chip-color);
 	transition: background-color 0.3s, color 0.3s;
-  
+
 	&:hover {
 		background-color: var(--chip-bg-hover);
-	  }
-  }
+	}
+}
+
+.project-container {
+	padding: 16px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: #f9f9f9;
+	margin-bottom: 20px;
+
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	ul {
+		padding-left: 20px;
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	.tech-stack,
+	.learning-section {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		margin-top: 5px;
+	}
+
+	.tech-chip,
+	.learn-chip {
+		display: inline-block;
+		background: #e3e3e3;
+		padding: 6px 10px;
+		border-radius: 15px;
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	.tech-chip {
+		background: #d1e8ff; // Light blue for tech stack
+		color: #004080; // Darker blue text
+	}
+
+	.learn-chip {
+		background: #ffe6cc; // Light orange for learnings
+		color: #804000; // Darker orange text
+	}
+
+	a {
+		color: #0073e6;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
