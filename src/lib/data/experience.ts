@@ -91,7 +91,7 @@ export const items: Array<Experience> = [
 		shortDescription: 'Developed email tracking and productivity management systems for Samsung customer care.'
 	},
 	{
-		slug: 'oxane-partners',
+		slug: 'oxane_partners',
 		company: 'Oxane Partners Limited',
 		description: 'Led full-stack development of an online assessment platform with MVC architecture in JAVA Spring Hibernate and AngularJS, reducing code redundancy by 60% and enhancing module performance. Streamlined XML and JSON data pipelines through automation, reducing data processing times by 50% and enhancing interoperability. Contributed to optimizing an existing financial portfolio management system, applying data structure improvements to reduce response times by 40%.',
 		contract: ContractType.SelfEmployed,
@@ -109,7 +109,7 @@ export const items: Array<Experience> = [
 		shortDescription: 'Developed an online assessment platform and optimized a financial portfolio management system.'
 	},
 	{
-		slug: 'delhi-technological-university',
+		slug: 'dtu_programming',
 		company: 'Delhi Technological University',
 		description: 'Worked on responsive, mobile-first front-end web development in Bootstrap for annual techfests (Phoenix, Cogenesis). Developed websites in PHP for online quizzing competitions (Cryptex). Designed and developed Android apps at Appsolute Pvt. Ltd.',
 		contract: ContractType.Freelance,
@@ -127,7 +127,7 @@ export const items: Array<Experience> = [
 		shortDescription: 'Developed web and mobile applications for various university events and organizations.'
 	},
 	{
-		slug: 'computer-society-of-india',
+		slug: 'dtu_csi',
 		company: 'Computer Society of India',
 		description: 'Served as the President of the Computer Society of India Delhi Technological University Chapter. Managed team engineering, infrastructure, event design, and corporate sponsorships. Gained hands-on experience in leadership roles.',
 		contract: ContractType.Freelance,
