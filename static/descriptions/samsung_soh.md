@@ -80,6 +80,18 @@ The SOH system became the **single source of security posture** for all service 
 - Used serverless architecture effectively to scale without infra bottlenecks
 - Applied vulnerability scanning into CI/CD flow without false positives
 
+## 🤖 ML Integration
+
+To enhance the platform's capabilities, **machine learning (ML)** was integrated for advanced security insights and anomaly detection. Key ML features include:
+
+- 📈 **Anomaly Detection**: Identifies unusual patterns in firewall changes and access logs using historical data.
+- 🔍 **Threat Prediction**: Predicts potential vulnerabilities based on past CVE trends and infrastructure configurations.
+- 🧠 **Intelligent Alerting**: Reduces false positives by correlating alerts with ML-driven risk scores.
+- ⚙️ **Policy Optimization**: Suggests optimal firewall rules and configurations using reinforcement learning.
+
+The ML models were trained using **AWS SageMaker** and deployed as serverless endpoints, ensuring scalability and low latency.
+
+[Details](../../static/descriptions/ml/samsung_soh_anomaly_detection_portfolio.md)
 ---
 
 ## 🚧 Future Work
@@ -101,3 +113,4 @@ The SOH system became the **single source of security posture** for all service 
 
 - [Samsung IAM System](https://anishphilip012git.github.io/portfolio/projects/samsung_iam) – Role-based, zero-trust access platform  
 - [Global CI/CD Pipeline](#) – Infrastructure automation and security integrations  
+

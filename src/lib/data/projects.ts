@@ -12,7 +12,7 @@ export const items: Array<Project> = [
 		logo: Assets.SBU,
 		name: 'Websheets - SECLAB',
 		period: {
-			from: new Date('2024-01-01')
+			from: new Date('2024-05-01')
 		},
 		skills: getSkills('c++', 'reactjs', 'js', 'ant design', 'microservices', 'docker', 'vagrant', 'vm', 'privacy-policies'),
 		type: 'Web Application'
@@ -26,7 +26,7 @@ export const items: Array<Project> = [
 		logo: Assets.SBU,
 		name: 'CS Workflow Digitization - COMPAS lab',
 		period: {
-			from: new Date('2024-01-01')
+			from: new Date('2024-01-01'), to: new Date('2024-12-31')
 		},
 		skills: getSkills('python', 'reactjs', 'js', 'gcp', 'nodejs', 'firebase', 'microservices', 'docker', 'adobe-pdf-apis', 'google-apis'),
 		type: 'Web Application'
